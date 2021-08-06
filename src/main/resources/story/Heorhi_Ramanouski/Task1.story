@@ -2,6 +2,8 @@
 Scenario: Sign Up new User
 Meta:
 	@layout desktop
+	
+	
 Given I am on the main application page
 
 When I enter `<EMail>` in field located `By.xpath(//*[@id="hero"]/div/div/div[2]/form/div[1]/input)`
@@ -16,6 +18,7 @@ Examples:
 Scenario: create a board
 Meta:
 	@layout desktop
+	
 	
 Given request body: {
 	"key":"0471642aefef5fa1fa76530ce1ba4c85",
